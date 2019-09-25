@@ -5,7 +5,7 @@ const portfolio = currentUrl();
 const twitch = currentUrl("tw-app");
 const goodCarton = currentUrl("good-carton");
 
-
+// GG
 function currentUrl(url) {
 
     let element = document.getElementById(`${url}`);
