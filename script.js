@@ -1,4 +1,11 @@
-function onClick() {
+const portfolio = currentUrl();
+const twitch = currentUrl("tw-app");
+const goodCarton = currentUrl("good-carton");
+
+
+function currentUrl(url) {
     let element = document.getElementById("click");
-    return element.href = "https://";
+    return function () {
+        return element.href = `https://alexeyabramov.github.io/${url}`;
+    }
 }
