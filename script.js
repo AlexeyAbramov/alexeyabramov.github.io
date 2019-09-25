@@ -1,24 +1,22 @@
 const git = currentUrl("git");
 const vk = currentUrl("vk");
-const insta = currentUrl("insta");
+const insta = currentUrl("inst");
 const portfolio = currentUrl();
 const twitch = currentUrl("tw-app");
 const goodCarton = currentUrl("good-carton");
 
 // GG
 function currentUrl(url) {
-
+debugger
     let element = document.getElementById(`${url}`);
     if (url === "git") {
         gitUrl(element);
     } else if (url === "vk") {
         vkUrl(element);
-    } else if (url === "insta") {
+    } else if (url === "inst") {
         instUrl(element)
-    } else
-        return function () {
-            element.href = `https://alexeyabramov.github.io/${url}`;
-        }
+    } else return function() {element.href = `https://alexeyabramov.github.io/${url}`;}
+
 }
 
 function gitUrl(e) {
