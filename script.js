@@ -15,7 +15,7 @@ debugger
         vkUrl(element);
     } else if (url === "inst") {
         instUrl(element)
-    } else return function() {element.href = `https://alexeyabramov.github.io/${url}`;}
+    } else return function() {element.href = `/${url}`;}
 
 }
 
