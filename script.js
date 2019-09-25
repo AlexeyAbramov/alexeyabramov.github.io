@@ -15,11 +15,7 @@ function currentUrl(url) {
         vkUrl(element);
     } else if (url === "insta") {
         instUrl(element)
-    } else if (url === "tw-app") {
-        twUrl(element)
-    } else if (url === "good-carton") {
-        gCartonUrl(element)
-    }
+    } else
         return function () {
             element.href = `https://alexeyabramov.github.io/${url}`;
         }
@@ -32,11 +28,5 @@ function vkUrl(e) {
     return e.href = "https://vk.com/id20692837";
 }
 function instUrl(e) {
-    return e.href = "https://instagram.com/al.abram0v";
-}
-function twUrl(e) {
-    return e.href = "https://instagram.com/al.abram0v";
-}
-function gCartonUrl(e) {
     return e.href = "https://instagram.com/al.abram0v";
 }
