@@ -6,45 +6,53 @@
     <title>A.A.</title>
 </head>
 <body>
-    <header class="main-header">
-            <div class="wrapper">
-                <div class="bio">
-                    <h1>Alexey<br>Abramov</h1>
-                    <h2>Junior Front-end<br>Developer</h2>
-                </div>
-                <div class="skills">
-                    <h3 class="skills__title">Skills</h3>
-                    <ul class="skills-list">
-                        <li class="skills-list__item"><img src="img/html.png" alt="skill-logo"></li>
-                        <li class="skills-list__item"><img src="img/css.png" alt="skill-logo"></li>
-                        <li class="skills-list__item"><img src="img/js.png" alt="skill-logo"></li>
-                        <li class="skills-list__item"><img src="img/react.png" alt="skill-logo"><span class="skill__title">React</span></li>
-                    </ul>
-                </div>
-                <div class="social">
-                    <ul class="social-list">
-                        <li class="social-list__item"><a class="kek" href="#" onclick={git(git)}><img src="img/git.png" alt=""></a></li>
-                        <li class="social-list__item"><a class="kek" href="#" onclick={vk(vk)}><img src="img/vk.png" alt=""></a></li>
-                        <li class="social-list__item"></li>
-                    </ul>
-                </div>
+<header class="main-header">
+    <div class="header-wrapper">
+        <div class="bio">
+            <h1>Alexey<br>Abramov</h1>
+            <h2>Junior Front-end<br>Developer</h2>
+        </div>
+        <div class="about-wrapper">
+            <div class="skills">
+                <h3 class="skills__title">Skills</h3>
+                <ul class="skills-list">
+                    <li class="skills-list__item"><img src="img/html.png" alt="skill-logo"></li>
+                    <li class="skills-list__item"><img src="img/css.png" alt="skill-logo"></li>
+                    <li class="skills-list__item"><img src="img/js.png" alt="skill-logo"></li>
+                    <li class="skills-list__item"><img src="img/react.png" alt="skill-logo"><span class="skill__title">React</span>
+                    </li>
+                </ul>
             </div>
-    </header>
-    <main class="main-content">
-            <div class="works">
-                <h3>Works</h3>
-                <div class="works-wrapper">
-                    <div class="works__item">
-                        <h4>Good carton</h4>
-                        <a href="#"></a>
-                    </div>
-                    <div class="works__item">
-                        <h4>React app</h4>
-                        <a href="#"></a>
-                    </div>
-                </div>
+            <div class="social">
+                <h3 class="social__title">Social</h3>
+                <ul class="social-list">
+                    <li class="social-list__item"><a id="git" href="#" onclick={git()}><img src="img/git.png"
+                                                                                            alt=""></a></li>
+                    <li class="social-list__item"><a id="vk" href="#" onclick={vk()}><img src="img/vk.png" alt=""></a>
+                    </li>
+                    <li class="social-list__item"><a id="insta" href="#" onclick={insta()}><img src="img/insta.png"
+                                                                                                alt=""></a></li>
+                    <li class="social-list__item"></li>
+                </ul>
             </div>
-    </main>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <div class="works">
+        <h3 class="works__title">Works</h3>
+        <div class="project-wrapper">
+            <div class="project__item">
+                <h4 class="project__title">Good carton</h4>
+                <a id="good-carton" onclick={goodCarton()} class="project__link"><img src="img/goodCarton.jpg" alt="project-img"></a>
+            </div>
+            <div class="project__item">
+                <h4 class="project__title">React app</h4>
+                <a id="tw-app" onclick={twitch()} class="project__link"><img src="img/twitchScreen.jpg" alt="project-img"></a>
+            </div>
+        </div>
+    </div>
+</main>
 
 <script src="script.js"></script>
 </body>
