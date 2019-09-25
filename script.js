@@ -7,7 +7,6 @@ const goodCarton = currentUrl("good-carton");
 
 // GG
 function currentUrl(url) {
-debugger
     let element = document.getElementById(`${url}`);
     if (url === "git") {
         gitUrl(element);

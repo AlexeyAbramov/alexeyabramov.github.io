@@ -208,3 +208,51 @@ li {
 
     opacity: .7;
 }
+
+@media screen and (min-width: 360px) {
+    .main-content {
+        height: 56vh;
+    }
+
+    .header-wrapper {
+        padding-top: 100px;
+    }
+
+    .project-wrapper {
+        flex-direction: column;
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .project__item:last-child {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .about-wrapper {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .skills-list {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skills-list {
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-height: 812px) {
+    .social {
+        margin-top: 600px;
+    }
+
+    @media screen and (min-height: 736px ) {
+        .social {
+            margin-top: 450px;
+        }
+    }
