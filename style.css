@@ -1,12 +1,101 @@
 *{
     margin: 0;
     padding: 0;
+
+    font-family: Myriad Pro , sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    box-sizing: border-box;
+}
+h1,
+h2{
+    font-size: 36px;
+
+    text-align: center;
+}
+h1{
+    padding-top: 80px;
+}
+h2{
+    padding-top: 75px;
+}
+li{
+    list-style: none;
 }
 .main-header{
     height: 100vh;
 
     background: url("img/bg.jpg") no-repeat center center / cover;
-}
-.container{
 
+    color: #e7dcdc;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 90vw;
+    padding-top: 210px;
+    margin: 0 auto;
+}
+.bio,
+.skills{
+    margin: 0 auto;
+}
+.skills{
+    width: 407px;
+
+    position: relative;
+
+    text-align: center;
+}
+.skills:before{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 85px;
+    height: 3px;
+
+    left: 0;
+    top: 9px;
+    background-color: #fff;
+}
+.skills:after{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 85px;
+    height: 3px;
+
+    right: 0;
+    top: 9px;
+    background-color: #fff;
+}
+.skills__title{
+    position: relative;
+}
+.skills-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 73px 70px;
+    margin-top: 24px;
+
+    background-color: rgba(136, 134, 134, .32);
+}
+.skills-list>*:nth-child(n+4){
+    margin-top: 70px;
+}
+.skills-list__item:last-child{
+    display: flex;
+    align-items: center;
+
+    color: #000;
+}
+.skill__title{
+    margin-left: 25px;
+
+    font-size: 30px;
 }

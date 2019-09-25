@@ -6,11 +6,46 @@
     <title>A.A.</title>
 </head>
 <body>
-    <header class="main-header container">
-
+    <header class="main-header">
+            <div class="wrapper">
+                <div class="bio">
+                    <h1>Alexey<br>Abramov</h1>
+                    <h2>Junior Front-end<br>Developer</h2>
+                </div>
+                <div class="skills">
+                    <h3 class="skills__title">Skills</h3>
+                    <ul class="skills-list">
+                        <li class="skills-list__item"><img src="img/html.png" alt="skill-logo"></li>
+                        <li class="skills-list__item"><img src="img/css.png" alt="skill-logo"></li>
+                        <li class="skills-list__item"><img src="img/js.png" alt="skill-logo"></li>
+                        <li class="skills-list__item"><img src="img/react.png" alt="skill-logo"><span class="skill__title">React</span></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul class="social-list">
+                        <li class="social-list__item"><a id="click" href=# onclick={onClick()}>11<img src="" alt=""></a></li>
+                        <li class="social-list__item"></li>
+                        <li class="social-list__item"></li>
+                    </ul>
+                </div>
+            </div>
     </header>
-    <main>
-
+    <main class="main-content">
+            <div class="works">
+                <h3>Works</h3>
+                <div class="works-wrapper">
+                    <div class="works__item">
+                        <h4>Good carton</h4>
+                        <a href="#"></a>
+                    </div>
+                    <div class="works__item">
+                        <h4>React app</h4>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
     </main>
+
+<script src="script.js"></script>
 </body>
 </html>
