@@ -297,7 +297,7 @@ li {
     }
 
     .social {
-        margin-top: 30px;
+        margin-top: 0;
     }
 
     .project__item:last-child {
