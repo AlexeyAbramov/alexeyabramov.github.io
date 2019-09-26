@@ -315,6 +315,10 @@ li {
     .project__item img{
         width: 272px;
     }
+    .project__link:hover:after{
+        width: 272px;
+        height: 161px;
+    }
     .skills:after,
     .skills:before{
         top: 7px;
