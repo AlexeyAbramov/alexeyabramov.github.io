@@ -4,6 +4,7 @@ const insta = currentUrl("inst");
 const portfolio = currentUrl();
 const twitch = currentUrl("tw-app");
 const goodCarton = currentUrl("good-carton");
+const s7 = currentUrl("aviasales-test-task");
 
 // GG
 function currentUrl(url) {
