@@ -169,6 +169,7 @@ li {
 .project-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     text-align: center;
 
     width: 70%;
