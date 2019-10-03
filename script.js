@@ -5,6 +5,7 @@ const portfolio = currentUrl();
 const twitch = currentUrl("tw-app");
 const goodCarton = currentUrl("good-carton");
 const s7 = currentUrl("aviasales-test-task");
+const task = currentUrl("test-task-rest-API");
 
 // GG
 function currentUrl(url) {
