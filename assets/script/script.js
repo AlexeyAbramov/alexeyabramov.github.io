@@ -1,5 +1,6 @@
 let scroll = false;
 let prevSlide = 0;
+const duration = 700; // время в мс
 
 $(document).ready(function () {
   $(".main").slick({
@@ -12,8 +13,10 @@ $(document).ready(function () {
 
   $(".nav-header__item").click(function (e) {
     e.preventDefault();
+
     $(".nav-header__item")[prevSlide].classList.remove("active");
     $(this).addClass("active");
+
     headerItem = $(this).index();
     prevSlide = headerItem;
     $(".main").slick("slickGoTo", parseInt(headerItem));
@@ -23,7 +26,6 @@ $(document).ready(function () {
     e.preventDefault();
     if (!scroll) {
       scroll = true;
-      const duration = 800; // время в мс
       $slider = $(this);
       setTimeout(function () {
         e.originalEvent.deltaY > 0
@@ -39,4 +41,22 @@ $(document).ready(function () {
     $(".nav-header__item")[currentSlide].classList.add("active");
     prevSlide = currentSlide;
   }
+
+  // slide-work
+  $('.slide-work').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    swipe: false,
+    asNavFor: '.slide-work_nav',
+  });
+  $('.slide-work_nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slide-work',
+    centerMode: true,
+    focusOnSelect: true,
+    infinite: true
+  });
 });
