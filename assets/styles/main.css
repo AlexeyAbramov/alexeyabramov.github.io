@@ -2,7 +2,7 @@
 
 :root {
   /*COLORS*/
-  --header-color: #f16539;
+  --main-color: #f16539;
   --nav-color-hover: #f1ecd6;
   --body-color: #e6e6e6;
   --text-black-color: #1a1a1a;
@@ -91,7 +91,7 @@ h3 {
 }
 /*HEADER*/
 header {
-  background-color: var(--header-color);
+  background-color: var(--main-color);
   width: var(--header-width);
   height: var(--height);
 }
@@ -225,7 +225,7 @@ header {
   color: var(--grey-color);
 }
 .about__surname {
-  color: var(--header-color);
+  color: var(--main-color);
 }
 .about__text {
   margin-top: 100px;
@@ -283,10 +283,10 @@ header {
   margin-top: 50px;
   height: 14vh;
 }
-.slide-work_nav .slick-slide{
-  width: 300px!important;
+.slide-work_nav .slick-slide {
+  width: 300px !important;
 }
-.slide-work_nav .slick-track{
+.slide-work_nav .slick-track {
   display: flex;
   justify-content: space-between;
 }
@@ -295,6 +295,7 @@ header {
 }
 .slide-work_nav img {
   height: 100%;
+  border: 1px solid var(--main-color);
 }
 
 /*CONTACTS*/
@@ -306,4 +307,44 @@ header {
 }
 .slick-list {
   height: var(--height);
+}
+.slick-slide {
+  outline: none;
+}
+/*FORM*/
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 100px auto 0 auto;
+}
+input[type="email"] {
+  padding: 10px 50px 10px 10px;
+  max-width: 30%;
+}
+textarea {
+  resize: none;
+  font-size: 17px;
+  padding: 10px;
+  color: var(--text-grey-color);
+}
+input[type="email"],
+input[type="submit"],
+textarea {
+  font-family: Rubik;
+  font-weight: bold;
+  outline-color: var(--main-color);
+  margin-top: 20px;
+}
+input[type="submit"] {
+  max-width: 50%;
+  padding: 10px 0;
+  cursor: pointer;
+  border: 1px solid rgb(118, 118, 118);
+  transition: var(--transition-duration);
+  text-transform: uppercase;
+}
+input[type="submit"]:hover {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
 }

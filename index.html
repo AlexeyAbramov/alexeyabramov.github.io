@@ -102,6 +102,13 @@
                     <div class="contacts__heading">
                         <h2 class="contacts__title">CONTACTS /</h2>
                     </div>
+                    <div class="contacts__body">
+                        <form action="send.php" method="POST" class="contacts__form form_contact">
+                            <input type="email" id="email" name="email" placeholder="Введите почту" required>
+                            <textarea name="message" id="message" cols="100" rows="20" placeholder="Введите ваше сообщение..." required></textarea>
+                            <input type="submit" value="Отправить">
+                        </form>
+                    </div>
                 </div>
             </section>
             <!--/CONTACTS-->
