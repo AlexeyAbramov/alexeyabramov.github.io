@@ -5,7 +5,7 @@
   --main-color: #f16539;
   --nav-color-hover: #f1ecd6;
   --body-color: #e6e6e6;
-  --text-black-color: #1a1a1a;
+  --black-color: #1a1a1a;
   --text-grey-color: #868e96;
   --grey-color: #343a40;
 
@@ -104,9 +104,8 @@ header {
 .logo-header {
   width: 160px;
   height: 160px;
-  background-color: var(--text-black-color);
   overflow: hidden;
-  border: 10px solid #7f5c5c;
+  border: 10px solid var(--black-color);
   border-radius: 50%;
 }
 /*NAV*/
@@ -124,7 +123,7 @@ header {
 }
 .nav-header__item {
   line-height: 150%;
-  color: var(--text-black-color);
+  color: var(--black-color);
   transition: var(--transition-duration), font-size 0s;
 }
 .nav-header__item:hover,
