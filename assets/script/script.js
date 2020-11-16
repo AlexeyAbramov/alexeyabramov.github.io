@@ -52,7 +52,7 @@ $(document).ready(function () {
     asNavFor: '.slide-work_nav',
   });
   $('.slide-work_nav').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.slide-work',
     centerMode: true,

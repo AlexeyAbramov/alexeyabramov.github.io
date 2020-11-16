@@ -278,6 +278,10 @@ header {
   background: url("/assets/images/works/3.jpg") center top;
   transition: 30s;
 }
+.slide-4 {
+  background: url("/assets/images/works/4.jpg") center top;
+  transition: 10s;
+}
 .slide-work_nav {
   margin-top: 50px;
   height: 14vh;
