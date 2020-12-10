@@ -101,7 +101,8 @@ header {
   align-items: center;
   padding-top: 25vh;
 }
-.header__hi {
+.header__hi,
+.header__front {
   display: none;
 }
 .logo-header {
@@ -391,7 +392,7 @@ input[type="submit"]:hover {
     }
   }
   .header__content {
-    padding-top: calc(40vh - 160px);
+    padding-top: 25vh;
   }
   .header__hi {
     display: block;
@@ -400,6 +401,7 @@ input[type="submit"]:hover {
     font-weight: bold;
   }
   .header__front {
+    display: block;
     font-size: 30px;
     margin-top: 23px;
   }
@@ -424,24 +426,51 @@ input[type="submit"]:hover {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 25px;
   }
+  .mobile__item{
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile__heading{
+    text-align: center;
+    font-size: 20px;
+  }
   .mobile__works {
     border: 5px solid var(--main-color);
     border-radius: 20px;
+    height: 100%;
+    margin-top: 10px;
   }
-  .mobile__works:nth-child(1) {
+  .mobile__item:nth-child(1) a {
     background: url("../images/works/preview1.png") no-repeat center center /
       cover;
   }
-  .mobile__works:nth-child(2) {
+  .mobile__item:nth-child(2) a {
     background: url("../images/works/preview2.png") no-repeat center center /
       cover;
   }
-  .mobile__works:nth-child(3) {
+  .mobile__item:nth-child(3) a {
     background: url("../images/works/preview3.png") no-repeat center center /
       cover;
   }
-  .mobile__works:nth-child(4) {
+  .mobile__item:nth-child(4) a {
     background: url("../images/works/preview4.png") no-repeat center center /
       cover;
+  }
+}
+@media screen and (max-width: 375px){
+  .mobile{
+    height: 150vh;
+  }
+  .mobile__item:nth-child(1) a {
+    background: url("../images/works/preview1.png") no-repeat center center;
+  }
+  .mobile__item:nth-child(2) a {
+    background: url("../images/works/preview2.png") no-repeat center center;
+  }
+  .mobile__item:nth-child(3) a {
+    background: url("../images/works/preview3.png") no-repeat center center;
+  }
+  .mobile__item:nth-child(4) a {
+    background: url("../images/works/preview4.png") no-repeat center center;
   }
 }
