@@ -355,7 +355,9 @@ input[type="submit"]:hover {
   border: 1px solid var(--main-color);
   color: var(--main-color);
 }
-
+.mobile{
+  display: none;
+}
 @media screen and (max-width: 414px) {
   .wrapper {
     flex-direction: column;
@@ -405,6 +407,7 @@ input[type="submit"]:hover {
     font-size: 30px;
     margin-top: 23px;
   }
+
   .header__logo {
     margin-top: 30px;
   }
@@ -417,6 +420,9 @@ input[type="submit"]:hover {
   main.main,
   .mouse {
     display: none;
+  }
+  .mobile{
+    display: block;
   }
   .mobile__title{
     text-align: center;
@@ -461,7 +467,7 @@ input[type="submit"]:hover {
   }
 }
 @media screen and (max-width: 375px){
-  .mobile{
+  .mobile__wrapper{
     height: 150vh;
   }
   .mobile__item:nth-child(1) a {
