@@ -418,7 +418,10 @@ input[type="submit"]:hover {
   .mouse {
     display: none;
   }
-  .mobile {
+  .mobile__title{
+    text-align: center;
+  }
+  .mobile__wrapper {
     width: 100vw;
     height: 100vh;
     padding: 10px;
